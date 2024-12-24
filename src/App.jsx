@@ -14,30 +14,19 @@ import Footer from './components/footer/Footer'
 function App() {
 
   return (
-    <main className='overflow-x-hidden'>
-      <UpdateFollower 
-      mouseOptions={{
-        backgroundColor: "white",
-        zIndex: 999,
-        followSpeed: 1.5,
-      }}
-      >
+    <main className='overflow-x-hidden select-none'>
+      
+     
       <Navbar/>
       <Hero/>
      
-      </UpdateFollower>
-      <UpdateFollower
-     mouseOptions={{
-      backgroundColor: "black",
-      zIndex: 999,
-      followSpeed: 1.5,
-    }} >
+    
          <Service/>
          <Banner/>
          <Bannertext/>
          <Blogs/>
          <Footer/>
-      </UpdateFollower>
+         
       
     </main>
   )

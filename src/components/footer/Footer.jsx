@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className=' bg-primary/70 md:bg-primary pt-12 pb-8 text-white '>
+    <footer className=' bg-primary/70 md:bg-primary pt-12 pb-8 text-white ' id='footer'>
         <div className='container '>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
          gap-8 '>
@@ -66,11 +66,17 @@ const Footer = () => {
       transition={{ duration:0.6, delay:0.6 }}
       className='space-y-6'>
 <h1>Follow Us</h1>
-<div className='flex items-center gap-3'>
-  <FaFacebook className='text-3xl hover:scale-105 duration-300'/>
-  <FaInstagram className='text-3xl hover:scale-105 duration-300'/>
-  <FaTwitter className='text-3xl hover:scale-105 duration-300'/>
-  <FaGithub className='text-3xl hover:scale-105 duration-300'/>
+<div className='flex items-center gap-3 cursor-pointer'>
+  <a href="https://www.facebook.com/DivinegiftJohnso" target="_blank" rel="noopener noreferrer">
+    <FaFacebook className='text-3xl hover:scale-125 duration-300  hover:bg-tertiary hover:rounded-full hover:p-2'/>
+  </a>
+  <FaInstagram className='text-3xl hover:scale-125 duration-300 hover:bg-tertiary hover:rounded-full hover:p-2'/>
+  <a href="https://twitter.com/Divinegift9503" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className='text-3xl hover:scale-125 duration-300 hover:bg-tertiary hover:rounded-full hover:p-2'/>
+  </a>
+  <a href="https://github.com/Divinejay-001" target="_blank" rel="noopener noreferrer">
+    <FaGithub className='text-3xl hover:scale-125 duration-300  hover:bg-tertiary hover:rounded-full hover:p-2'/>
+  </a>
 </div>
 <div className='space-y-2'>
   <p>Payment Methods</p>

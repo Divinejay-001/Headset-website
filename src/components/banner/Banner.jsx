@@ -8,7 +8,7 @@ const Banner = () => {
     <>
     <section >
         <div className="container py-14 grid grid-cols-1
-         md:grid-cols-2 space-y-6 md:space-y-0 gap-12">
+         md:grid-cols-2 space-y-6 md:space-y-0 gap-12" id='banner'>
   {/* Banner Image    */}
   <div>
     <motion.img
@@ -17,7 +17,7 @@ const Banner = () => {
     transition={{ duration: 0.8, delay:0.2, ease: easeInOut}}
     whileInView='visible'
 //   viewport={{ once: true }}
-    src={Headphone4} alt="" className='w-[300px] md:w-[400px]' />
+    src={Headphone4} alt="" className='w-[300px] md:w-[400px] mx-auto' />
   </div>
   {/* Banner text    */}
   <div className='flex flex-col justify-center'>

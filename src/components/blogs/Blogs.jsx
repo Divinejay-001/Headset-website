@@ -48,7 +48,7 @@ const BlogsData = [
 const Blogs = () => {
   return (
     <>
-      <section className='bg-secondary/15 md:bg-tertiary/25 sm:bg-red-700/35 text-white'>
+      <section className='bg-secondary/15 md:bg-tertiary/25 sm:bg-red-700/35 text-white ' id='blogs'>
         <div className="container py-14 ">
             <motion.h1
            variants={FadeUp(0.2)}
